@@ -182,7 +182,7 @@ export function App(props) {
         : null;
 
     return (
-        <Container style={{padding: "0px", border: "1px solid grey"}}>
+        <Container style={{padding: "0px"}}>
             {/* This shows the navbar with connect button */}
             <NavBar
                 username={myName}
@@ -191,10 +191,10 @@ export function App(props) {
             />
             <Row>
                 {/* Here the friends list is shown */}
-                <Col style={{paddingRight: "0px", borderRight: "2px solid #000000"}}>
+                <Col style={{paddingRight: "10px"}}>
                     <div
                         style={{
-                            backgroundColor: "#DCDCDC",
+                            boxShadow: "0px 0px 5px 0px rgba(0,0,0,0.75)",
                             height: "100%",
                             overflowY: "auto",
                         }}
@@ -205,6 +205,7 @@ export function App(props) {
                                     width: "100%",
                                     alignSelf: "center",
                                     marginLeft: "15px",
+                                    marginBottom: "10px",
                                 }}
                             >
                                 <Card.Header>Messageries</Card.Header>
@@ -218,7 +219,10 @@ export function App(props) {
                     </div>
                 </Col>
                 <Col xs={8} style={{paddingLeft: "0px"}}>
-                    <div style={{backgroundColor: "#DCDCDC", height: "100%"}}>
+                    <div style={{
+                        boxShadow: "0px 0px 5px 0px rgba(0,0,0,0.75)",
+                        height: "100%"
+                    }}>
                         {/* Chat header with refresh button, username and public key are rendered here */}
                         <Row style={{marginRight: "0px"}}>
                             <Card
@@ -254,7 +258,6 @@ export function App(props) {
                         <div
                             className="SendMessage"
                             style={{
-                                borderTop: "2px solid black",
                                 position: "relative",
                                 bottom: "0px",
                                 padding: "10px 45px 0 45px",

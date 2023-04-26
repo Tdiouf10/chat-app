@@ -32,7 +32,7 @@ export function AddNewChat(props) {
                             id="addPublicKey"
                             size="text"
                             type="text"
-                            placeholder="Enter Friends Public Key"
+                            placeholder="Entrer la clé publique de votre ami(e)"
                         />
                         <br />
                         <Form.Control
